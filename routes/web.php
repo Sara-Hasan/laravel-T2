@@ -22,6 +22,5 @@ Route::get('/about', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
-Route::get('/product',[\App\Http\Controllers\controllerProduct::class, 'product']);
-
+Route::get('/',[\App\Http\Controllers\controllersProduct::class, 'product']);
 
